@@ -11,9 +11,9 @@ from PLT import settings
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="FaceRoom API",
+        title="PLT API",
         default_version='v1',
-        description="FaceRoom Telegram Bot API",
+        description="PLT - бизнес-платформа ТЮН ",
         contact=openapi.Contact(email="pyostr@gmail.com"),
     ),
     public=True,
