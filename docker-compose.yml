@@ -1,0 +1,18 @@
+version: '3'
+
+
+services:
+  web:
+    build: ./
+
+    command: . ./env/Scripts/activate $$ python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - plt_storage:/plt/media
+      - static:/plt/static
+    ports:
+      - '8000:8000'
+    env_file: .env
+
+volumes:
+  tg_bot_storage:
+  static:

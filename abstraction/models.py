@@ -1,0 +1,13 @@
+from django.db import models
+
+
+class AbstractModel(models.Model):
+    class Meta:
+        abstract = True
+
+    date_created = models.DateTimeField(
+        auto_now_add=True
+    )
+    date_last_modified = models.DateTimeField(
+        auto_now_add=True
+    )
